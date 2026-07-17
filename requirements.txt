@@ -36,3 +36,26 @@ chromadb
 
 # Optional Embeddings
 sentence-transformers
+
+
+
+streamlit>=1.44,<2
+python-dotenv>=1.0,<2
+
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-chroma
+langchain-mistralai
+
+chromadb
+
+mistralai
+
+pypdf
+docx2txt
+pandas
+
+groq
+qdrant-client
