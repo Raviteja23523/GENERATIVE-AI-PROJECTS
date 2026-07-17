@@ -4,6 +4,12 @@ from pathlib import Path
 
 import streamlit as st
 
+from original import (
+    ingest_documents,
+    ask_question,
+    remove_documents,
+)
+
 UPLOAD_FOLDER = Path("uploads")
 SUPPORTED_TYPES = ["pdf", "docx", "txt", "csv"]
 
