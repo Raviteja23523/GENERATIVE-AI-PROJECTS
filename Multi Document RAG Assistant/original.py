@@ -12,21 +12,22 @@ from langchain_community.document_loaders import (
     TextLoader,
 )
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_mistralai import ChatMistralAI
-from langchain_groq import GroqEmbeddings
+from langchain_mistralai import ChatMistralAI, MistralAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
 load_dotenv()
 
 DB_DIRECTORY = "chroma_db1"
-EMBEDDING_MODEL = "mixedbread-ai/mxbai-embed-large"
+EMBEDDING_MODEL = "mistral-embed"
 LLM_MODEL = "mistral-small-2506"
 
-
+   
 def get_vector_store():
     """Open the persistent Chroma database used for both ingestion and retrieval."""
-    embedding_model = GroqEmbeddings(model=EMBEDDING_MODEL)
+    embedding_model = MistralAIEmbeddings(
+        model=EMBEDDING_MODEL
+    )
     return Chroma(
         persist_directory=DB_DIRECTORY,
         embedding_function=embedding_model,
