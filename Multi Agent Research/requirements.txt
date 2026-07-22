@@ -1,0 +1,38 @@
+# LangChain Ecosystem
+langchain
+langchain-core
+langchain-community
+langgraph
+
+# Mistral AI
+langchain-mistralai
+mistralai
+
+# Search Tool
+tavily-python
+
+# Web Scraping
+beautifulsoup4
+requests
+lxml
+
+# Environment Variables
+python-dotenv
+
+# Data Validation
+pydantic
+
+# Tokenization
+tiktoken
+
+# Async Requests
+aiohttp
+
+# Retry Handling
+tenacity
+
+# Optional Vector Database
+chromadb
+
+# Optional Embeddings
+sentence-transformers
